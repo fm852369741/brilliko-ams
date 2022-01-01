@@ -1,0 +1,35 @@
+GET http://localhost/api/users/get
+
+###
+POST http://localhost/api/users/add
+Content-Type: application/json
+
+{
+   "name": "Gurinder Sir",
+   "fatherName": "...",
+   "email": "karanpreet2011@gmail.com",
+   "courseType": "Web Development",
+   "courses": "HTML,CSS,JS,PHP,MySQL",
+   "dateJoined": "01-01-2022",
+   "daysLeft": "01-06-2023"
+}
+
+###
+POST http://localhost/api/users/update/61cec3e0db7cb348c8daf58a
+Content-Type: application/json
+
+{
+   "daysLeft": "50"
+}
+
+###
+POST http://localhost/api/users/delete/61ced40ddb7cb348c8daffef
+
+###
+POST http://localhost/api/auth/login
+Content-Type: 'application/json'
+
+{
+   "email":"william@brilliko.com",
+   "password":"12345678"
+}
